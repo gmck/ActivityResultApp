@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ActivityResultApp</string>
+    <string name="action_settings">Settings</string>
+
+	<string name="bluetooth_title">Bluetooth Connection</string>
+	<string name ="bluetooth_is_enabled">Bluetooth is now enabled. A connection to a Bluetooth scan tool can now be made.</string>
+	<string name ="bluetooth_not_enabled">Bluetooth is not enabled. A connection can not be made to a Bluetooth scan tool until Bluetooth is enabled.</string>
+
+	<!--ShowMissingPermissionDialog-->
+	<string name="missing_permission_title">Bluetooth Connection Permission Denied</string>
+	<string name="missing_permission_explanation">
+		Android 12 and above require the user to grant the special permission Bluetooth Connection to connect to Bluetooth scan tools.
+		\n\nThis permission has been previously denied.
+		\n\nTo correct this situation, locate our ActivityResultApp in the app drawer and long press on the app icon and then choose App Info. Under the Permissions heading it will read No permissions granted.
+		\n\nTap on the heading Permissions and a new window will open. Under the heading Not Allowed it will read Nearby Devices. Tap on Nearby Devices and another window will open with the Don\'t allow radio button
+		already selected.
+		\n\nSelect the radio button Allow, then use the back key or back gesture to exit back to the app draw and restart ActivityResultApp.
+		\n\nIf your Bluetooth radio is off in Quick Settings, ActivityResultApp will then prompt you to turn it on.
+	</string>
+	<!--ShowMissingPermissionDialog-->
+</resources>

@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+		<!--AlertDialogRoundedCornersTheme style-->
+		<item name="materialAlertDialogTheme">@style/AlertDialogRoundedCornersTheme</item>
+    </style>
+
+
+	<style name="ActivityResultApp.Starting" parent="Theme.SplashScreen.IconBackground">
+
+		<!--<item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>-->
+
+		<item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+		<item name="windowSplashScreenIconBackgroundColor">@color/ic_launcher_background</item>
+		<item name="windowSplashScreenBackground">?android:colorBackground</item>
+		<item name="postSplashScreenTheme">@style/AppTheme</item>
+	</style>
+
+
+	<!--AlertDialogRoundedCornersTheme-->
+	<style name="AlertDialogRoundedCornersTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+		<item name="materialAlertDialogTitlePanelStyle">@style/TitlePanelCenter</item>
+		<item name="materialAlertDialogTitleTextStyle">@style/TitleTextStyle</item>
+		<item name="shapeAppearanceMediumComponent">@style/RoundShapeAppearance</item>
+	</style>
+
+	<style name="TitlePanelCenter" parent="MaterialAlertDialog.MaterialComponents.Title.Panel">
+		<item name="android:gravity">center_horizontal</item>
+	</style>
+
+	<style name="TitleTextStyle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+		<!-- Just bold the Title.Text-->
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="RoundShapeAppearance" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+		<item name="cornerFamily">rounded</item>
+		<item name="cornerSize">16dp</item>
+	</style>
+
+</resources>
